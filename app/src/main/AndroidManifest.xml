@@ -14,7 +14,13 @@
         android:theme="@style/Theme.20220527SWE"
         tools:targetApi="31">
         <activity
-            android:name=".LoginActivity"
+            android:name=".ReserveTable"
+            android:exported="false" />
+        <activity
+            android:name=".FirstSectorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
             android:exported="false" />
         <activity
             android:name=".AfterLoginActivity"

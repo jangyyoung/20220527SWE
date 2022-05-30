@@ -2,6 +2,7 @@ package com.example.a20220527swe;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -9,7 +10,7 @@ import android.widget.Button;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class AfterLoginActivity extends AppCompatActivity implements View.OnClickListener {
-    Button btnRevoke,btnLogout;
+    Button btnRevoke,btnLogout,btnRegister;
     private FirebaseAuth mAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +18,10 @@ public class AfterLoginActivity extends AppCompatActivity implements View.OnClic
         setContentView(R.layout.activity_after_login);
         btnLogout=(Button)findViewById(R.id.btn_logout);
         btnRevoke=(Button)findViewById(R.id.btn_revoke);
+
+
+        btnRegister=(Button)findViewById(R.id.btn_register);
+        btnRegister.setOnClickListener(this);
 
         mAuth=FirebaseAuth.getInstance();
 
@@ -41,6 +46,9 @@ public class AfterLoginActivity extends AppCompatActivity implements View.OnClic
                 revokeAccess();
                 finishAffinity();
                 break;
+            case R.id.btn_register:
+                Intent intent =new Intent(AfterLoginActivity.this,FirstSectorActivity.class);
+                startActivity(intent);
         }
     }
 }

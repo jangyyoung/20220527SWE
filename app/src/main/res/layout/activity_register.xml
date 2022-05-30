@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/EntireSpace">
+        <ScrollView
+            android:id="@+id/firstScroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TableRow>
+                    <Button
+                        android:layout_height="60dp"
+                        android:layout_width="60dp"
+                        android:id="@+id/locker_1"
+                        android:text="1"/>
+                </TableRow>
+            </TableLayout>
+        </ScrollView>
+    </HorizontalScrollView>
+
+</LinearLayout>

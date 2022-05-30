@@ -5,6 +5,12 @@
       <map>
         <entry key="..\:/Users/aenor/AndroidStudioProjects/20220527SWE/app/src/main/res/layout/activity_after_login.xml" value="0.25" />
         <entry key="..\:/Users/aenor/AndroidStudioProjects/20220527SWE/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/aenor/OneDrive/god/GitHub/20220527SWE/app/src/main/res/layout/activity_after_login.xml" value="0.33" />
+        <entry key="..\:/Users/aenor/OneDrive/god/GitHub/20220527SWE/app/src/main/res/layout/activity_first_sector.xml" value="0.25" />
+        <entry key="..\:/Users/aenor/OneDrive/god/GitHub/20220527SWE/app/src/main/res/layout/activity_login.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/aenor/OneDrive/god/GitHub/20220527SWE/app/src/main/res/layout/activity_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/aenor/OneDrive/god/GitHub/20220527SWE/app/src/main/res/layout/activity_register.xml" value="0.1962962962962963" />
+        <entry key="..\:/Users/aenor/OneDrive/god/GitHub/20220527SWE/app/src/main/res/layout/activity_reserve_table.xml" value="0.33" />
       </map>
     </option>
   </component>
@@ -13,5 +19,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.2760416666666667" />
+      </ProjectState>
+    </option>
   </component>
 </project>
