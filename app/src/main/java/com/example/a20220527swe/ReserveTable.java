@@ -36,7 +36,8 @@ import java.util.Map;
 
 
 public class ReserveTable extends AppCompatActivity implements View.OnClickListener {
-
+    public int i=0;
+    int[]color={Color.rgb(254,204,190),Color.rgb(214,215,215)};
     private DatabaseReference mPostReference;
     private FirebaseAuth rFirebaseAuth;
     Button btn_Update;
@@ -54,7 +55,6 @@ public class ReserveTable extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_reserve_table);
         btn_Update = (Button) findViewById(R.id.btn_update);
         edit_ID = (EditText) findViewById(R.id.edit_id);
-        Button button1=(Button) findViewById(R.id.locker_1);
         btn_Update.setOnClickListener(new View.OnClickListener() {
         String ref;
             @Override
@@ -85,7 +85,9 @@ public class ReserveTable extends AppCompatActivity implements View.OnClickListe
                     postFirebaseDatabase(true);
                     getFirebaseDatabase();
                     setInsertMode();
-
+                    /*Button result=findViewById(v.getId());    //color issues
+                    result.setBackgroundColor(color[i%2]);
+                    mPostReference.child("id").child(String.valueOf(v.getId())).setValue(i%2);*/
                     Intent intent = new Intent(ReserveTable.this,FirstSectorActivity.class);
                     startActivity(intent);
                 }
