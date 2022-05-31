@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        TextView tvContents=(TextView) findViewById(R.id.tv_contents);
+        //TextView tvContents=(TextView) findViewById(R.id.logo);
         ImageView ivGlide=(ImageView) findViewById(R.id.iv_glide);
 
         signInButton=findViewById(R.id.signInButton);
