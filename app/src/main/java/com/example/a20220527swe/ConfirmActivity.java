@@ -77,7 +77,7 @@ public class ConfirmActivity extends AppCompatActivity {
                     postFirebaseDatabase(true);
 
                 }
-
+                Toast.makeText(getApplicationContext(),"예약되었습니다.",Toast.LENGTH_SHORT).show();
                 Intent intent_confirm=new Intent();
                 intent_confirm.putExtra("result","Close Popup");
                 setResult(RESULT_OK,intent);
@@ -111,31 +111,5 @@ public class ConfirmActivity extends AppCompatActivity {
         }
         childUpdates.put("/id_list/" + ID, postValues);
         mPostReference.updateChildren(childUpdates);
-    }
-    public void getFirebaseDatabase(){
-        ValueEventListener postListener = new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                Log.e("getFirebaseDatabase", "key: " + dataSnapshot.getChildrenCount());
-                arrayData.clear();
-                arrayIndex.clear();
-                for (DataSnapshot postSnapshot: dataSnapshot.getChildren()) {
-                    String key = postSnapshot.getKey();
-                    FirebasePost get = postSnapshot.getValue(FirebasePost.class);
-                    arrayIndex.add(key);
-                    Log.d("getFirebaseDatabase", "key: " + key);
-
-                }
-                arrayAdapter.clear();
-                arrayAdapter.addAll(arrayData);
-                arrayAdapter.notifyDataSetChanged();
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-                Log.w("getFirebaseDatabase","loadPost:onCancelled", databaseError.toException());
-            }
-        };
-
     }
 }

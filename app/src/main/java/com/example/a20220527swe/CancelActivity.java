@@ -22,7 +22,7 @@ public class CancelActivity extends AppCompatActivity {
         mDatabase=FirebaseDatabase.getInstance();
 
 
-        Button button_confirm=(Button) findViewById(R.id.confirm_cancel);
+        Button button_confirm=(Button) findViewById(R.id.cancel_confirm);
         Button button_B=(Button) findViewById(R.id.cancel_cancel);
 
 
@@ -30,7 +30,7 @@ public class CancelActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 clearFirebaseDatabase(true);
-                //mPostReference.child("/id").removeValue();
+                mPostReference.child("/id").removeValue();
                 Intent intent = new Intent(getApplication(),FirstSectorActivity.class);
                 startActivity(intent);
             }
