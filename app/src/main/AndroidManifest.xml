@@ -14,10 +14,10 @@
         android:theme="@style/Theme.20220527SWE"
         tools:targetApi="31">
         <activity
-            android:name=".CancelActivity"
+            android:name=".ConfirmActivity"
             android:exported="false" />
         <activity
-            android:name=".ReserveTable"
+            android:name=".CancelActivity"
             android:exported="false" />
         <activity
             android:name=".FirstSectorActivity"

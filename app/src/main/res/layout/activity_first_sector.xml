@@ -6,24 +6,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".FirstSectorActivity">
-    <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TableRow
-            android:background="#FFF000">
-            <Button
-                android:layout_height="60dp"
-                android:layout_width="60dp"
-                android:id="@+id/reserve_btn"
-                android:text="예약"/>
-            <Button
-                android:layout_height="60dp"
-                android:layout_width="60dp"
-                android:id="@+id/reserve_cancel_btn"
-                android:text="취소"/>
-        </TableRow>
-    </TableLayout>
     <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"

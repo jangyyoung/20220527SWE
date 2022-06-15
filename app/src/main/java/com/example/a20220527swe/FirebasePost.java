@@ -13,6 +13,18 @@ public class FirebasePost {
     public FirebasePost(){
         // Default constructor required for calls to DataSnapshot.getValue(FirebasePost.class)
     }
+    public String getid(){
+        return id;
+    }
+    public void setid(String id){
+        this.id=id;
+    }
+    public String getname(){
+        return name;
+    }
+    public void setname(String id){
+        this.name=name;
+    }
 
     public FirebasePost(String id, String name) {
         this.id = id;
